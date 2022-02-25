@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+#fillincountry{
+    display:flex;
+    align-items:center ;
+    justify-content: space-around;
+    
+ 
+    
+}
+
+#gridcountry{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2 1fr);
+    gap: 4vh;
+}
+
+
+
+#filterbycountry{
+    display:flex;
+    align-items:center ;
+    justify-content: space-around;
+    padding-top: 50vh;
+    
+}
+
+#buttonaddcountry{
+    padding: 3vh;
+
+  
+}
+
+#container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+#tabell{
+    padding-top: 10vh;
+    border-bottom: 1px solid #aaa;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    
+  
+}
+
+#tabell > div{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.row{
+    padding-top: 6vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.row > div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
