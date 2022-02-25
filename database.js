@@ -65,7 +65,7 @@ let database = [
         Country: "Canada",
         Capital: "Ottawa",
         Inhabitant : 38,
-        Euro: false
+        Language : "English"
 
     },
 
