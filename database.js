@@ -9,7 +9,7 @@ let database = [
         Country: "Spain",
         Capital: "Madrid",
         Inhabitant : 43,
-        Euro: true
+        Language : "Spanish"
 
     },
 
@@ -18,7 +18,7 @@ let database = [
         Country: "Indonesia",
         Capital: "Jakarta",
         Inhabitant : 274,
-        Euro : false
+        Language : "English"
 
     },
 
@@ -27,7 +27,7 @@ let database = [
         Country: "Finland",
         Capital: "Helsinki",
         Inhabitant : 5,
-        Euro: true
+        Language : "Finnish"
 
     },
 
@@ -36,7 +36,7 @@ let database = [
         Country: "Marocko",
         Capital: "Rabat",
         Inhabitant : 37,
-        Euro : false
+        Language : "Arabic"
 
     },
 
@@ -45,7 +45,7 @@ let database = [
         Country: "Argentina",
         Capital: "Buenos Aries",
         Inhabitant : 45,
-        Euro: false
+        Language : "Spanish"
 
     },
 
@@ -55,7 +55,7 @@ let database = [
         Country: "Australia",
         Capital: "Canberra",
         Inhabitant : 26,
-        Euro: false
+        Language : "English"
 
     },
 
@@ -74,7 +74,7 @@ let database = [
         Country: "Poland",
         Capital: "Warsaw",
         Inhabitant : 38,
-        Euro : false
+        Language : "Polish"
 
     },
 
@@ -83,7 +83,7 @@ let database = [
         Country: "Madagascar",
         Capital: "Antananarivo",
         Inhabitant : 28,
-        Euro: false
+        Language : "French"
     },
 
     {
@@ -91,7 +91,7 @@ let database = [
         Country: "Japan",
         Capital: "Tokyo",
         Inhabitant : 126,
-        Euro: false
+        Language : "Japanese"
 
     },
 
