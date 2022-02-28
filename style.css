@@ -52,7 +52,7 @@ h1{
 
 
 #tabell{
-    padding-top: 10vh;
+    padding-top: 5vh;
     border-bottom: 1px solid #aaa;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -67,16 +67,23 @@ h1{
    
 }
 
-.row{
-    padding-top: 6vh;
-    width: 80vw;
+.country{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);    
+    padding-bottom: 3vh ;
+    padding-top: 3vh;
+    
 }
 
-.row > div{
+.country > div{
     display: flex;
     justify-content: space-around;
+
+
 }
+
+
+
+
 
 
