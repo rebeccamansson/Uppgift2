@@ -20,14 +20,34 @@ function getCountry(country) {
 }
 
 // Makes an array of countries into HTML
-function getCountries (countries){
-    let countriesE = document.getElementById ("Countries");
+function getCountries(countries) {
+    let countriesE = document.getElementById("countries");
     countriesE.innerHTML = "";
 
-    for (let country of countries){
-        let countryE = getCountry (country);
-        countriesE.appendChild (countryE);
+    for (let country of countries) {
+        let countryE = getCountry(country);
+        countriesE.appendChild(countryE);
     }
 }
 
-getCountries (database);
+
+// Made a function to make a new country
+function newCountry(country, capital, inhabitant, language) {
+    let Country = {
+        country: country,
+        capital: capital,
+        inhabitant: inhabitant,
+        language: language,
+    };
+
+    return Country;
+
+}
+
+// Made a function to add the new country to the database
+function addNewCountryToDatabase (database,country){
+database.push(country);
+}
+
+
+ getCountries(database);
