@@ -5,96 +5,97 @@
 let database = [
 
     {
-        Id: 1,
-        Country: "Spain",
-        Capital: "Madrid",
-        Inhabitant : 43,
-        Language : "Spanish"
+        id: 1,
+        country: "Spain",
+        capital: "Madrid",
+        inhabitant : 43,
+        language : "Spanish"
 
     },
 
     {
-        Id: 2,
-        Country: "Indonesia",
-        Capital: "Jakarta",
-        Inhabitant : 274,
-        Language : "English"
+        id: 2,
+        country: "Indonesia",
+        capital: "Jakarta",
+        inhabitant : 274,
+        language : "English"
 
     },
 
     {
-        Id: 3,
-        Country: "Finland",
-        Capital: "Helsinki",
-        Inhabitant : 5,
-        Language : "Finnish"
+        id: 3,
+        country: "Finland",
+        capital: "Helsinki",
+        inhabitant : 5,
+        language : "Finnish"
 
     },
 
     {
-        Id: 4,
-        Country: "Marocko",
-        Capital: "Rabat",
-        Inhabitant : 37,
-        Language : "Arabic"
+        id: 4,
+        country: "Marocko",
+        capital: "Rabat",
+        inhabitant : 37,
+        language : "Arabic"
 
     },
 
     {
-        Id: 5,
-        Country: "Argentina",
-        Capital: "Buenos Aries",
-        Inhabitant : 45,
-        Language : "Spanish"
-
-    },
-
-
-    {
-        Id: 6,
-        Country: "Australia",
-        Capital: "Canberra",
-        Inhabitant : 26,
-        Language : "English"
+        id: 5,
+        country: "Argentina",
+        capital: "Buenos Aries",
+        inhabitant : 45,
+        language : "Spanish"
 
     },
 
 
     {
-        Id: 7,
-        Country: "Canada",
-        Capital: "Ottawa",
-        Inhabitant : 38,
-        Language : "English"
+        id: 6,
+        country: "Australia",
+        capital: "Canberra",
+        inhabitant : 26,
+        language : "English"
+
+    },
+
+
+    {
+        id: 7,
+        country: "Canada",
+        capital: "Ottawa",
+        inhabitant : 38,
+        language : "English"
 
     },
 
     {
-        Id: 8,
-        Country: "Poland",
-        Capital: "Warsaw",
-        Inhabitant : 38,
-        Language : "Polish"
+        id: 8,
+        country: "Poland",
+        capital: "Warsaw",
+        inhabitant : 38,
+        language : "Polish"
 
     },
 
     {
-        Id: 9,
-        Country: "Madagascar",
-        Capital: "Antananarivo",
-        Inhabitant : 28,
-        Language : "French"
+        id: 9,
+        country: "Madagascar",
+        capital: "Antananarivo",
+        inhabitant : 28,
+        language : "French"
     },
 
     {
-        Id: 10,
-        Country: "Japan",
-        Capital: "Tokyo",
-        Inhabitant : 126,
-        Language : "Japanese"
+        id: 10,
+        country: "Japan",
+        capital: "Tokyo",
+        inhabitant : 126,
+        language : "Japanese"
 
     },
 
 
 
 ]
+
