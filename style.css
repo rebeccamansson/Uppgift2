@@ -14,6 +14,8 @@ h1{
     display:flex;
     align-items:center ;
     justify-content: space-around;
+    padding-left: 12vh;
+    padding-bottom: 10vh;
     
  
     
@@ -22,7 +24,7 @@ h1{
 #gridcountry{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 4vh;
 }
 
@@ -36,8 +38,16 @@ h1{
     
 }
 
+
+
 #buttonaddcountry{
     padding: 3vh;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
 
   
 }
