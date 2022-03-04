@@ -2,23 +2,28 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Marcellus;
+    background-image: url("worldmap.jpg");
+    background-repeat: repeat;
+    background-size: cover    
 }
+
 
 h1{
     display: flex;
     justify-content: center;
     padding-top: 5vh;
+    color: white;
 }
+
+
 
 #fillincountry{
     display:flex;
     align-items:center ;
     justify-content: space-around;
     padding-left: 12vh;
-    padding-bottom: 10vh;
-    
- 
-    
+    padding-bottom: 10vh;   
 }
 
 #gridcountry{
@@ -28,27 +33,29 @@ h1{
     gap: 4vh;
 }
 
+#filtercountries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 4vh; 
+}
 
 
 #filterbycountry{
     display:flex;
     align-items:center ;
-    justify-content: space-around;
-    padding-top: 50vh;
-    
+    justify-content: space-around;    
 }
 
-
+#showallcountries{
+    display: flex;
+    justify-content: center;  
+}
 
 #buttonaddcountry{
     padding: 3vh;
     display: flex;
     justify-content: center;
-    
-    
-    
-    
-
   
 }
 
@@ -57,42 +64,56 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    color: black;
+    background-color: ghostwhite;
+    position: relative;
+    top: 5vh;
+    border: ghostwhite solid 30px;   
 }
 
 
 #tabell{
-    padding-top: 5vh;
+    padding-top: 8vh;
     border-bottom: 1px solid #aaa;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    
-    
-  
+    grid-template-columns: repeat(5, 1fr); 
 }
 
 #tabell > div{
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;   
 }
 
 .country{
     display: grid;
     grid-template-columns: repeat(5, 1fr);    
     padding-bottom: 3vh ;
-    padding-top: 3vh;
-    
+    padding-top: 3vh;    
 }
 
 .country > div{
     display: flex;
     justify-content: space-between;
-
-
 }
 
+button{
+    border: 0.5px solid black;
+    color: black;
+    padding: 0.5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Marcellus;
+  }
 
+input{
+    font-family: Marcellus;
+}
+
+ol{
+    padding: 0px;
+}
 
 
 
