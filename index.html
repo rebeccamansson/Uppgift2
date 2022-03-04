@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U2</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Patua+One&family=Secular+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+
 
     <h1>Countries</h1>
 
@@ -20,15 +26,30 @@
             <input id="inhabitant" type="text" placeholder="Inhabitants (millions)">
             <input id="language" type="text" placeholder="Language">
         </div>
-            <div id="buttonaddcountry"><button>Add</button> </div>
+        <div id="buttonaddcountry"><button>Add</button> </div>
     </form>
 
 
+
+    <div id="filtercountries">
+        <form id="filterbycountry">
+            <input id="filtercountry" type="text" placeholder="Filter by country">
+            <button>Filter</button>
+        </form>
+
+
+        <form id="filterbycapital">
+            <input id="filtercapital" type="text" placeholder="Filter by capital">
+            <button>Filter</button>
+        </form>
+
+
+        <button id="showallcountries" type="button">Show all</button>
+    </div>
+
+
     <div id="container">
-
-
         <div id="tabell">
-            
             <div>Country</div>
             <div>Capital</div>
             <div>Inhabitants (millions)</div>
@@ -36,23 +57,11 @@
 
         </div>
 
-        <div id="countries"></div>
+        <ol id="countries"></ol>
 
 
-        <div id="filtercountries">
-            <form id="filterbycountry">
-                <input id="filtercountry" type="text" placeholder="Filter by country">
-                <button>Filter</button>
-            </form>
 
 
-                <form id="filterbycapital">
-                    <input id="filtercapital" type="text" placeholder="Filter by capital">
-                    <button>Filter</button>
-                </form>
-
-                <button id="showallcountries" type="button">Show all</button>
-        </div>
 
 
         <script src="database.js"></script>

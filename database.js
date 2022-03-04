@@ -8,8 +8,8 @@ let database = [
         id: 1,
         country: "Spain",
         capital: "Madrid",
-        inhabitant : 43,
-        language : "Spanish"
+        inhabitant: 43,
+        language: "Spanish"
 
     },
 
@@ -17,8 +17,8 @@ let database = [
         id: 2,
         country: "Indonesia",
         capital: "Jakarta",
-        inhabitant : 274,
-        language : "English"
+        inhabitant: 274,
+        language: "English"
 
     },
 
@@ -26,8 +26,8 @@ let database = [
         id: 3,
         country: "Finland",
         capital: "Helsinki",
-        inhabitant : 5,
-        language : "Finnish"
+        inhabitant: 5,
+        language: "Finnish"
 
     },
 
@@ -35,8 +35,8 @@ let database = [
         id: 4,
         country: "Marocko",
         capital: "Rabat",
-        inhabitant : 37,
-        language : "Arabic"
+        inhabitant: 37,
+        language: "Arabic"
 
     },
 
@@ -44,8 +44,8 @@ let database = [
         id: 5,
         country: "Argentina",
         capital: "Buenos Aries",
-        inhabitant : 45,
-        language : "Spanish"
+        inhabitant: 45,
+        language: "Spanish"
 
     },
 
@@ -54,8 +54,8 @@ let database = [
         id: 6,
         country: "Australia",
         capital: "Canberra",
-        inhabitant : 26,
-        language : "English"
+        inhabitant: 26,
+        language: "English"
 
     },
 
@@ -64,8 +64,8 @@ let database = [
         id: 7,
         country: "Canada",
         capital: "Ottawa",
-        inhabitant : 38,
-        language : "English"
+        inhabitant: 38,
+        language: "English"
 
     },
 
@@ -73,8 +73,8 @@ let database = [
         id: 8,
         country: "Poland",
         capital: "Warsaw",
-        inhabitant : 38,
-        language : "Polish"
+        inhabitant: 38,
+        language: "Polish"
 
     },
 
@@ -82,16 +82,16 @@ let database = [
         id: 9,
         country: "Madagascar",
         capital: "Antananarivo",
-        inhabitant : 28,
-        language : "French"
+        inhabitant: 28,
+        language: "French"
     },
 
     {
         id: 10,
         country: "Japan",
         capital: "Tokyo",
-        inhabitant : 126,
-        language : "Japanese"
+        inhabitant: 126,
+        language: "Japanese"
 
     },
 

@@ -7,11 +7,11 @@ function getCountry(country) {
     div.id = country.id;
 
     div.innerHTML = `
-
-    <div> ${country.country}</div>
+    <li> ${country.country} </li> 
     <div> ${country.capital}</div>
     <div> ${country.inhabitant}</div>
     <div> ${country.language}</div>
+    
     <button type ="button">Remove</button>
 
 
@@ -28,6 +28,8 @@ function getCountries(countries) {
     for (let country of countries) {
         let countryE = getCountry(country);
         countriesE.appendChild(countryE);
+
+        handlerOnRemoveButton();
     }
 }
 
@@ -55,6 +57,7 @@ function removeCountry(countries, id) {
     for (let i = 0; i < countries.length; i++) {
         let country = countries[i];
         if (country.id == id) {
+            confirm(`Are you sure you want to remove ${country.country}?`);
             countries.splice(i, 1);
             return;
         }
@@ -83,6 +86,7 @@ function handlerOnRemoveButton() {
     }
 }
 
+// a function when the user fill in the form
 function writeInCountry(event) {
 
     event.preventDefault();
@@ -92,6 +96,7 @@ function writeInCountry(event) {
     let inhabitant = Number(document.getElementById("inhabitant").value);
     let language = document.getElementById("language").value;
 
+    // alerts if the user doesent fill in all the information
     if (country == "") {
         return alert("Fill in the country please.")
     }
@@ -108,78 +113,99 @@ function writeInCountry(event) {
         return alert("Fill in the language please.")
     }
 
-
+    // the new countries ids
     let Country = newCountry(country, capital, inhabitant, language);
-    Country.id = database[database.length - 1].id + 1;
+
+    if (database.length = database.length) {
+        Country.id = database[database.length - 1].id + 1;
+    }
+
+    else {
+        Country.id = 1;
+    }
 
     addNewCountryToDatabase(database, Country);
     getCountries(database);
-    
 
+    // empty all the form fields
     let form = document.getElementById("fillincountry");
     form.reset();
 
 }
 
+// a functions that adds click eventlostener to the add button
 function handlerOnAddButton() {
     let form = document.getElementById("fillincountry");
     form.addEventListener("submit", writeInCountry);
 }
 
+// returns all countries based on the country
 function getCountrybyCountry(countries, country) {
     let countryByCountry = [];
     for (let Country of countries) {
-        if (Country.country.toLowerCase()== country.toLowerCase()) {
+        if (Country.country.toLowerCase() == country.toLowerCase()) {
             countryByCountry.push(Country);
         }
     }
     return countryByCountry;
 }
 
+// returns all countries based on the capital
 function getCountrybyCapital(countries, capital) {
     let countryByCapital = [];
     for (let Country of countries) {
-        if (Country.capitaltoLowerCase() == capital.toLowerCase()) {
+        if (Country.capital.toUpperCase() == capital.toUpperCase()) {
             countryByCapital.push(Country);
         }
     }
     return countryByCapital;
 }
 
-function filterCountryByCountry (event){
-    event.preventDefault ();
-    let country = document.getElementById ("filtercountry").value;
-    let countries = getCountrybyCountry (database, country)
-    getCountries (countries);
+//  a function that filter country by country
+function filterCountryByCountry(event) {
+    event.preventDefault();
+    let country = document.getElementById("filtercountry").value;
+    let countries = getCountrybyCountry(database, country)
+    getCountries(countries);
+
+    // I prefer to empty the fields
+    let filter = document.getElementById("filterbycountry");
+    filter.reset();
 }
 
-function filterCountryByCapital (event){
-    event.preventDefault ();
-    let capital = document.getElementById ("filtercapital").value;
-    let countries = getCountrybyCapital (database, capital)
-    getCountries (countries);
+//  a function that filter country by country
+function filterCountryByCapital(event) {
+    event.preventDefault();
+    let capital = document.getElementById("filtercapital").value;
+    let countries = getCountrybyCapital(database, capital)
+    getCountries(countries);
+    // I prefer to empty the fields
+    let filter = document.getElementById("filterbycapital");
+    filter.reset();
 }
 
-function showAllClick (){
-    document.getElementById ("filtercountry").value ="";
-    document.getElementById ("filtercapital").value ="";
-    getCountries (database);
-    
+// a function so you can see all countries again
+function showAllClick() {
+    document.getElementById("filtercountry").value = "";
+    document.getElementById("filtercapital").value = "";
+    getCountries(database);
+
 }
 
-function handlerOnFilter (){
-    let countryForm = document.getElementById ("filterbycountry");
-    let capitalForm = document.getElementById ("filterbycapital");
-    let showAllButton = document.getElementById ("showallcountries");
+// adds eventlistener "submit" and "click" to the filters and show all button
+function handlerOnFilter() {
+    let countryF = document.getElementById("filterbycountry");
+    let capitalF = document.getElementById("filterbycapital");
+    let showAllButton = document.getElementById("showallcountries");
 
-    countryForm.addEventListener ("submit", filterCountryByCountry);
-    capitalForm.addEventListener ("submit", filterCountryByCapital);
-    showAllButton.addEventListener ("click", showAllClick);
+    countryF.addEventListener("submit", filterCountryByCountry);
+    capitalF.addEventListener("submit", filterCountryByCapital);
+    showAllButton.addEventListener("click", showAllClick);
 }
 
-getCountry(country) ;
+// Initialize the page
 getCountries(database);
 handlerOnAddButton();
 handlerOnFilter();
-handlerOnRemoveButton();
+
 
